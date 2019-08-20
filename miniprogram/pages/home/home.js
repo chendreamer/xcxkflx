@@ -20,8 +20,8 @@ Page({
       success(res) {
         that.setData({
           showLoginButton: false,
-          avatarUrl: res.data.userAvatarUrl,
-          nickName: res.data.userNickName
+          avatarUrl: res.data.avatarUrl,
+          nickName: res.data.nickName
         });
         console.log(res.data);
       },
@@ -93,8 +93,8 @@ Page({
     if (e.detail.errMsg === 'getUserInfo:ok'){
       that.setData({
         showLoginButton: false,
-        avatarUrl: e.detail.userInfo.userAvatarUrl,
-        nickName: e.detail.userInfo.userNickName
+        avatarUrl: e.detail.userInfo.avatarUrl,
+        nickName: e.detail.userInfo.nickName
       });
       wx.setStorage({
         key: "userInfo",

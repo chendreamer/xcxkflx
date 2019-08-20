@@ -10,26 +10,44 @@
     "pages/openapi/openapi",
     "pages/openapi/serverapi/serverapi",
     "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid"
+    "pages/openapi/cloudid/cloudid",
+    "pages/home/home",
+    "pages/timeline/timeline",
+    "pages/log/log"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
+    "backgroundColor": "#F1F1F1",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "chen-kflx",
+    "navigationBarTitleText": "心灵碰撞",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color":"#555",
+    "selectedColor": "#1890ff",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "iconPath": "images/Home.png",
+        "selectedIconPath": "images/Home1.png",
+        "text": "广场"
       },
       {
-        "pagePath": "pages/addFunction/addFunction",
-        "text": "日志"
+        "pagePath": "pages/timeline/timeline",
+        "iconPath": "images/Diary.png",
+        "selectedIconPath": "images/Diary1.png",
+        "text": "历程"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/Me.png",
+        "selectedIconPath": "images/Me1.png",
+        "text": "我"
       }
     ]
+  },
+  "usingComponents": {
+    "cu-custom": "colorui/components/cu-custom"
   },
   "sitemapLocation": "sitemap.json"
 }

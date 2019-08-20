@@ -1,0 +1,39 @@
+<view class="cu-timeline">
+<view class="cu-item text-green">
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v0.0.8</view>
+        <view class="cu-tag line-white">2019/08/19 18:00</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.调好授权登录逻辑</view>
+      </view>
+    </view>   
+  </view>
+<view class="cu-item text-green">
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v0.0.3</view>
+        <view class="cu-tag line-white">2019/08/19 12:00</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.制作按钮配图</view>
+        <view>2.引入ColorUI</view>
+        <view>3.搭建好“我”的页面框架</view>
+        <view>4.搭建好“历程”的页面框架</view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v0.0.1</view>
+        <view class="cu-tag line-white">2019/08/16 18:00</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.生成“心灵碰撞”的基本雏形</view>
+        <view>2.添加了底部按钮</view>
+      </view>
+    </view>   
+  </view>
+</view>

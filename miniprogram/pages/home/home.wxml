@@ -1,0 +1,73 @@
+<!--pages/home/home.wxml-->
+<scroll-view scroll-y class="scrollPage">
+  <view class="header">
+    <view class="flex solid-bottom padding align-center justify-center">
+      <button wx:if="{{showLoginButton}}" class="cu-btn round bg-cyan padding-lg" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">点我授权</button>
+      <view wx:elif="{{!showLoginButton}}" class="flex justify-center">
+        <view class="text-center">
+          <view class="cu-avatar xl round" style="background-image:url({{avatarUrl}});"></view>
+          <view class="nickname">
+            {{nickName}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/weilanwl/ColorUI">
+        <text class="cuIcon-github text-grey"></text>
+        <text class="text-grey">GitHub</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/log/log" hover-class="none">
+        <text class="cuIcon-formfill text-green"></text>
+        <text class="text-grey">日志</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-appreciatefill text-red"></text>
+        <text class="text-grey">赞赏支持</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+    <!-- <view class="cu-item">
+    <button class="cu-btn content" open-type="feedback" bindtap="showModal" data-target="DialogModal1">
+       <text class="cuIcon-exit text-red"></text>
+        <text class="text-grey">取消授权并退出</text>
+      </button>
+    </view> -->
+  </view>
+
+  <view class="text-center" style="margin-top:20px">
+    version:0.0.8
+  </view>
+</scroll-view>
+
+<view class="cu-modal {{modalName=='DialogModal1'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">退出提示</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      小主真的要退出吗？再想想嘛。。。
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-green" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-green margin-left" bindtap="hideModal">确定</button>
+      </view>
+    </view>
+  </view>
+</view>

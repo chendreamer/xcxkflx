@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+.header{
+  height: 180px;
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566212492713&di=339aae3fff9cb0c5193a2771c5ba6854&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F05%2F80%2F53%2F865c22ebe7b51a5.jpg);
+  background-size:100% 200px;
+  background-repeat:no-repeat;
+}
+
+.header>.flex{
+  height: 100%;
+}
+
+.nickname{
+  margin-top: 8px;
+  font-size: 14px;
+}

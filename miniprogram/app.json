@@ -13,7 +13,8 @@
     "pages/openapi/cloudid/cloudid",
     "pages/home/home",
     "pages/timeline/timeline",
-    "pages/log/log"
+    "pages/log/log",
+    "pages/writing/writing"
   ],
   "window": {
     "backgroundColor": "#F1F1F1",
@@ -23,7 +24,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color":"#555",
+    "color": "#555",
     "selectedColor": "#1890ff",
     "list": [
       {

@@ -18,12 +18,12 @@ Page({
     wx.getStorage({//查询是否已授权
       key: 'userInfo',
       success(res) {
+        console.log(res);
         that.setData({
           showLoginButton: false,
           avatarUrl: res.data.avatarUrl,
           nickName: res.data.nickName
         });
-        console.log(res.data);
       },
       fail(res) {
         that.setData({
@@ -48,7 +48,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    console.log(this.data.showLoginButton);
+    // wx.request({
+    //   url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx304185111a7fca04&secret=b2896a9a10f43ebeb101f0e2f75c0fb8&js_codelgDnkD6+CJmKPFKEoK7SfIw+WHwIXdZvfeHC2mKYAAiFHgrG7/tZHUGSdfJ/XigCc5UA5ullpwFyjl3S2curx5Rof2r7TXYg/np3kPRgajc7tAlL60N9mYuuQLJPvAz0OuWfXC+nepS0jluNtC1yrHrNEXYHABXJP04w4+D5cUYWZ30g3eHJmUp8PjimKB5ilTXQ0uqqWJcptBXyArOZhHCLPQQVbLAkrOn7dLyFavZEqRD71Ba9ETPU12UxOqr8hz5iJ+UQDK29RlIYHTiT4HhtZdobBf5WVOEUMc515i8fajxYEiPRsLPkknqCNWspTcrYbXiBZiEFWWoF5gbzmthUCpabzyxQx+r32UxOO9uCCmDC88VaNOblwiCF5H7wQ/+krM61bPQujCHp3lYk6X0kMW+3joGkbf24c/Rrzt8BTX4aMkOESq/Pw8U6vW3nhHfn4O4f9SKMnDFqTKRWPdNEWGrHcVR3hP4hqbqlKMA=&grant_type=authorization_code', //仅为示例，并非真实的接口地址
+    //   method: 'Get',
+    //   header: {
+    //     'content-type': 'application/json' // 默认值
+    //   },
+    //   success(res) {
+    //     console.log(res.data)
+    //   }
+    // })
   },
 
   /**
@@ -91,6 +100,9 @@ Page({
     var that = this;
     console.log(e);
     if (e.detail.errMsg === 'getUserInfo:ok'){
+
+      
+
       that.setData({
         showLoginButton: false,
         avatarUrl: e.detail.userInfo.avatarUrl,

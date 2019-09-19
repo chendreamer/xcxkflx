@@ -2,6 +2,17 @@
 <view class="cu-item text-green">
     <view class="bg-gradual-green content shadow">
       <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v0.0.9</view>
+        <view class="cu-tag line-white">2019/09/19 18:17</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.修改历程界面，将数据从数据库获取出来</view>
+      </view>
+    </view>   
+  </view>
+<view class="cu-item text-green">
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v0.0.8</view>
         <view class="cu-tag line-white">2019/08/19 18:00</view>
       </view>

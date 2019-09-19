@@ -1,7 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  123
-
   <!-- 用户 openid -->
   <view class="userinfo">
     <button 

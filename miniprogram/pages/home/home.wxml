@@ -13,8 +13,13 @@
       </view>
     </view>
   </view>
-
   <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+    <navigator class="content" url="/pages/writing/writing">
+        <text class="cuIcon-write text-grey"></text>
+        <text class="text-grey">写日记</text>
+      </navigator>
+    </view>
     <view class="cu-item arrow">
       <view class="content" bindtap="CopyLink" data-link="https://github.com/weilanwl/ColorUI">
         <text class="cuIcon-github text-grey"></text>
@@ -48,7 +53,7 @@
   </view>
 
   <view class="text-center" style="margin-top:20px">
-    version:0.0.8
+    version:0.0.9
   </view>
 </scroll-view>
 
